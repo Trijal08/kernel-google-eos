@@ -36,3 +36,5 @@ vendor  := $(dtstree)/vendor
 ifneq "$(wildcard $(vendor)/Makefile)" ""
 	subdir-y += vendor
 endif
+
+dtb-$(CONFIG_ARCH_QCOM) += google-eos.dtb
