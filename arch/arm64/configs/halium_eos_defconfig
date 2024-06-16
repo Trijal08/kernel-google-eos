@@ -207,6 +207,7 @@ CONFIG_RT_SOFTINT_OPTIMIZATION=y
 CONFIG_RELAY=y
 CONFIG_BLK_DEV_INITRD=y
 CONFIG_INITRAMFS_SOURCE=""
+# CONFIG_INITRAMFS_FORCE is not set
 CONFIG_RD_GZIP=y
 # CONFIG_RD_BZIP2 is not set
 # CONFIG_RD_LZMA is not set
@@ -510,7 +511,7 @@ CONFIG_STACKPROTECTOR_PER_TASK=y
 #
 # Boot options
 #
-CONFIG_CMDLINE="stack_depot_disable=on kasan.stacktrace=off kvm-arm.mode=protected cgroup_disable=pressure console=ttyGS0"
+CONFIG_CMDLINE="stack_depot_disable=on kasan.stacktrace=off kvm-arm.mode=protected cgroup_disable=pressure"
 # CONFIG_CMDLINE_FROM_BOOTLOADER is not set
 CONFIG_CMDLINE_EXTEND=y
 # CONFIG_CMDLINE_FORCE is not set
@@ -6942,13 +6943,3 @@ CONFIG_ARCH_USE_MEMTEST=y
 # CONFIG_MEMTEST is not set
 # end of Kernel Testing and Coverage
 # end of Kernel hacking
-
-# CONFIG_VT=y
-CONFIG_SYSVIPC=y
-CONFIG_DEVTMPFS=y
-CONFIG_PID_NS=y
-CONFIG_USER_NS=y
-# CONFIG_NULL_TTY=y
-CONFIG_U_SERIAL_CONSOLE=y
-CONFIG_USB_U_SERIAL=y
-# CONFIG_USB_ETH=y
